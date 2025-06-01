@@ -1,0 +1,149 @@
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Spline+Sans%3Awght%40400%3B500%3B700"
+    />
+
+    <title>SAAC Para Todos</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link rel="stylesheet" href="miestilo.css" />
+  </head>
+  <body>
+        <div
+      class="relative flex size-full min-h-screen flex-col bg-[#fcfcf8] justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Spline Sans", "Noto Sans", sans-serif;'
+    >
+      <header class="bg-[#fcfcf8] p-4 pb-2">
+        <div class="flex items-center justify-between">
+          <img src="./public/image/logo_pag.png" alt="Logo SAAC" class="h-10 w-auto mr-4" />
+          <h2 class="paginaTitulo text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center sm:text-left pl-12">SAAC Para Todos</h2>
+        </div>
+
+        <nav id="main-menu" class="pb-3 hidden sm:flex flex-col sm:flex-row sm:justify-center">
+          <div class="flex flex-col sm:flex-row border-b border-[#e9e8ce] px-4 gap-8">
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent .tituloMenu pb-[13px] pt-4" href="principal.html">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Principal</p>
+            </a>            
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="aboutUs.html">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Quiénes Somos</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="aboutUs.html">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Acerca de</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="#">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Registrarse</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#f8f406] text-[#1c1c0d] pb-[13px] pt-4" href="login.html">
+              <p class="text-[#1c1c0d] text-sm font-bold leading-normal tracking-[0.015em]">Login</p>
+            </a>
+             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://www.google.com.ar/">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Google</p>
+            </a>
+             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://espanol.yahoo.com/">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Yahoo</p>
+            </a>
+             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://talentosdigitales.ar/">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Talentos digitales</p>
+            </a>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <div
+        class="relative flex size-full min-h-screen flex-col bg-[#fcfcf8] justify-between group/design-root overflow-x-hidden"
+        style='font-family: "Spline Sans", "Noto Sans", sans-serif;'
+        >
+        <div>
+            <div class="flex items-center bg-[#fcfcf8] p-4 pb-2 justify-between">
+            <h2 class="text-[#1c1c0d] text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">Sign Up</h2>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1c1c0d] text-base font-medium leading-normal pb-2">First Name</p>
+                <input
+                placeholder="Enter your first name"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c1c0d] focus:outline-0 focus:ring-0 border border-[#e9e8ce] bg-[#fcfcf8] focus:border-[#e9e8ce] h-14 placeholder:.tituloMenu p-[15px] text-base font-normal leading-normal"
+                value=""
+                />
+            </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1c1c0d] text-base font-medium leading-normal pb-2">Last Name</p>
+                <input
+                placeholder="Enter your last name"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c1c0d] focus:outline-0 focus:ring-0 border border-[#e9e8ce] bg-[#fcfcf8] focus:border-[#e9e8ce] h-14 placeholder:.tituloMenu p-[15px] text-base font-normal leading-normal"
+                value=""
+                />
+            </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1c1c0d] text-base font-medium leading-normal pb-2">Email</p>
+                <input
+                placeholder="Enter your email"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c1c0d] focus:outline-0 focus:ring-0 border border-[#e9e8ce] bg-[#fcfcf8] focus:border-[#e9e8ce] h-14 placeholder:.tituloMenu p-[15px] text-base font-normal leading-normal"
+                value=""
+                />
+            </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1c1c0d] text-base font-medium leading-normal pb-2">Username</p>
+                <input
+                placeholder="Choose a username"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c1c0d] focus:outline-0 focus:ring-0 border border-[#e9e8ce] bg-[#fcfcf8] focus:border-[#e9e8ce] h-14 placeholder:.tituloMenu p-[15px] text-base font-normal leading-normal"
+                value=""
+                />
+            </label>
+            </div>
+            <div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+            <label class="flex flex-col min-w-40 flex-1">
+                <p class="text-[#1c1c0d] text-base font-medium leading-normal pb-2">Password</p>
+                <input
+                placeholder="Create a password"
+                class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-xl text-[#1c1c0d] focus:outline-0 focus:ring-0 border border-[#e9e8ce] bg-[#fcfcf8] focus:border-[#e9e8ce] h-14 placeholder:.tituloMenu p-[15px] text-base font-normal leading-normal"
+                value=""
+                />
+            </label>
+            </div>
+            <div class="flex justify-stretch">
+            <div class="flex flex-1 gap-3 flex-wrap px-4 py-3 justify-between">
+                <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#f8f406] text-[#1c1c0d] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                <span class="truncate">Save</span>
+                </button>
+                <button
+                class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-4 bg-[#f4f4e6] text-[#1c1c0d] text-sm font-bold leading-normal tracking-[0.015em]"
+                >
+                <span class="truncate">Cancel</span>
+                </button>
+            </div>
+            </div>
+        </div>
+        <div>
+            <div
+            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-none group-[:not(.dark)]/design-root:hidden"
+            style='background-image: url("/dark.svg"); aspect-ratio: 390 / 320;'
+            ></div>
+            <div
+            class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-none group-[.dark]/design-root:hidden"
+            style='background-image: url("/light.svg"); aspect-ratio: 390 / 320;'
+            ></div>
+        </div>
+        </div>
+    </main>
+    <footer>
+    <div class="h-5 bg-[#fcfcf8] py-4 text-center tituloMenu text-sm">
+        <p>&copy; 2025 SAAC Para Todos. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+    </div>
+  </body>
+</html>

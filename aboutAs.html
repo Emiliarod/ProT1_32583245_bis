@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiénes Somos - SAAC Para Todos</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Spline+Sans%3Awght%40400%3B500%3B700"
+    />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <link rel="stylesheet" href="miestilo.css" />
+  </head>
+  <body>
+    <div
+      class="relative flex size-full min-h-screen flex-col bg-[#fcfcf8] justify-between group/design-root overflow-x-hidden"
+      style='font-family: "Spline Sans", "Noto Sans", sans-serif;'
+    >
+      <header class="bg-[#fcfcf8] p-4 pb-2">
+        <div class="flex items-center justify-between">
+          <img src="./public/image/logo_pag.png" alt="Logo SAAC" class="h-10 w-auto mr-4" />
+          <h2 class="paginaTitulo text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center sm:text-left pl-12">SAAC Para Todos</h2>
+        </div>
+
+        <nav id="main-menu" class="pb-3 hidden sm:flex flex-col sm:flex-row sm:justify-center">
+          <div class="flex flex-col sm:flex-row border-b border-[#e9e8ce] px-4 gap-8">
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent .tituloMenu pb-[13px] pt-4" href="principal.html">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Principal</p>
+            </a>            
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#f8f406] text-[#1c1c0d] pb-[13px] pt-4" href="aboutUs.html">
+              <p class="text-[#1c1c0d] text-sm font-bold leading-normal tracking-[0.015em]">Quiénes Somos</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="aboutUs.html">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Acerca de</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="#">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Registrarse</p>
+            </a>
+            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="login.html">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Login</p>
+            </a>
+             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://www.google.com.ar/">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Google</p>
+            </a>
+             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://espanol.yahoo.com/">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Yahoo</p>
+            </a>
+             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://talentosdigitales.ar/">
+              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Talentos digitales</p>
+            </a>
+          </div>
+        </nav>
+      </header>
+
+      <main class="container mx-auto px-4 py-8">
+        <section class="mb-12">
+          <h1 class="text-[#1c1c0d] text-3xl font-bold leading-tight tracking-[-0.015em] text-center mb-6">Nuestro Equipo</h1>
+          <p class="text-[#1c1c0d] text-base leading-relaxed text-center max-w-2xl mx-auto">
+            Somos un equipo apasionado y dedicado a desarrollar soluciones innovadoras para facilitar la comunicación. Con una mezcla de habilidades técnicas y un profundo compromiso social, trabajamos para hacer de SAAC Para Todos una herramienta accesible y útil.
+          </p>
+        </section>
+
+        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+            <img src="./public/image/imagen1.jpg" alt="Foto de [Nombre Programador 1]" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-[#f8f406]" />
+            <h3 class="text-[#1c1c0d] text-xl font-bold mb-2">Nombre del Programador 1</h3>
+            <p class=".tituloMenu text-sm mb-4">Rol: Desarrollador Principal</p>
+            <p class="text-[#1c1c0d] text-base leading-relaxed">
+              Experto en desarrollo web, apasionado por las nuevas tecnologías y la creación de interfaces intuitivas. Su misión es construir el código que da vida a SAAC Para Todos.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+            <img src="./public/image/imagen2.jpg" alt="Foto de [Nombre Programador 2]" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-[#f8f406]" />
+            <h3 class="text-[#1c1c0d] text-xl font-bold mb-2">Nombre del Programador 2</h3>
+            <p class=".tituloMenu text-sm mb-4">Rol: Especialista Frontend</p>
+            <p class="text-[#1c1c0d] text-base leading-relaxed">
+              Enfocado en la experiencia de usuario y el diseño responsive, asegura que la plataforma sea accesible y agradable en cualquier dispositivo.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-6 flex flex-col items-center text-center">
+            <img src="./public/image/imagen3.png" alt="Foto de [Nombre Encargado de Página]" class="w-32 h-32 rounded-full object-cover mb-4 border-4 border-[#f8f406]" />
+            <h3 class="text-[#1c1c0d] text-xl font-bold mb-2">Nombre del Encargado de Página</h3>
+            <p class=".tituloMenu text-sm mb-4">Rol: Gestor de Contenidos y SEO</p>
+            <p class="text-[#1c1c0d] text-base leading-relaxed">
+              Responsable de la optimización del contenido y la visibilidad del sitio web. Se asegura de que la información sea relevante y fácil de encontrar.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="h-5 bg-[#fcfcf8] py-4 text-center .tituloMenu text-sm">
+          <p>© 2025 SAAC Para Todos. Todos los derechos reservados.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const mainMenu = document.getElementById('main-menu');
+
+        if (menuToggle && mainMenu) {
+          menuToggle.addEventListener('click', function() {
+            mainMenu.classList.toggle('hidden');
+            mainMenu.classList.toggle('flex');
+            mainMenu.classList.toggle('flex-col');
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
