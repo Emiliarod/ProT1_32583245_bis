@@ -1,179 +1,111 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="es">
+<head>
     <meta charset="UTF-8">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
-    <link
-      rel="stylesheet"
-      as="style"
-      onload="this.rel='stylesheet'"
-      href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&family=Spline+Sans%3Awght%40400%3B500%3B700"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAC para Todos- Principal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="principal.html"><img src="img/logopag.jpg" alt="Logo SAAC" width="30" height="30"> SAAC</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="principal.html">Principal</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="acerca.html">Acerca de</a></li>
+                    <li class="nav-item"><a class="nav-link" href="registrarse.html">Registrarse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
 
-    <title>SAAC Para Todos</title>
-    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Bienvenidos a SAAC para Todos</h1>
+        <p class="lead text-center">Explora el mundo de los Sistemas Alternativos y Aumentativos de la Comunicación.</p>
 
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-
-    <link rel="stylesheet" href="miestilo.css" />
-  </head>
-  <body>
-    <div
-      class="relative flex size-full min-h-screen flex-col bg-[#fcfcf8] justify-between group/design-root overflow-x-hidden"
-      style='font-family: "Spline Sans", "Noto Sans", sans-serif;'
-    >
-      <header class="bg-[#fcfcf8] p-4 pb-2">
-        <div class="flex items-center justify-between">
-          <img src="./public/image/logo_pag.png" alt="Logo SAAC" class="h-10 w-auto mr-4" />
-          <h2 class="paginaTitulo text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center sm:text-left pl-12">SAAC Para Todos</h2>
+        <div id="saacCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#saacCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#saacCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#saacCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel1.jpg" class="d-block w-100" alt="Imagen Carrusel 1">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Descubre nuevas formas de comunicarte</h5>
+                        <p>Herramientas y recursos para todas las edades.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel2.jpg" class="d-block w-100" alt="Imagen Carrusel 2">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Empoderando la expresión</h5>
+                        <p>SAAC: Un puente hacia la inclusión.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel3.jpg" class="d-block w-100" alt="Imagen Carrusel 3">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Únete a nuestra comunidad</h5>
+                        <p>Aprende, comparte y crece con nosotros.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#saacCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#saacCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
 
-        <nav id="main-menu" class="pb-3 hidden sm:flex flex-col sm:flex-row sm:justify-center">
-          <div class="flex flex-col sm:flex-row border-b border-[#e9e8ce] px-4 gap-8">
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-[#f8f406] text-[#1c1c0d] pb-[13px] pt-4" href="principal.html">
-              <p class="text-[#1c1c0d] text-sm font-bold leading-normal tracking-[0.015em]">Principal</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="aboutAs.html">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Quiénes Somos</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="aboutUs.html">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Acerca de</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="#">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Registrarse</p>
-            </a>
-            <a class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="login.html">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Login</p>
-            </a>
-             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://www.google.com.ar/">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Google</p>
-            </a>
-             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://espanol.yahoo.com/">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Yahoo</p>
-            </a>
-             <a target="blank" class="flex flex-col items-center justify-center border-b-[3px] border-b-transparent tituloMenu pb-[13px] pt-4" href="https://talentosdigitales.ar/">
-              <p class="tituloMenu text-sm font-bold leading-normal tracking-[0.015em]">Talentos digitales</p>
-            </a>
-          </div>
-        </nav>
-      </header>
-
-      <main>
-        <section class="py-4">
-          <div class="flex overflow-y-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
-            <div class="flex items-stretch p-4 gap-3">
-              <div class="flex h-full flex-1 flex-col gap-4 rounded-lg min-w-60">
-              <div
-                class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-xl flex flex-col"
-                style='background-image: url("./public/image/SAAC.jpg");'
-                ></div>
-                <p class="text-[#1c1c0d] text-base font-medium leading-normal">SAAC</p>
-              </div>
-            </div>
-          </div>
+        <section class="text-center mb-5">
+            <h2>¿Qué son los SAAC?</h2>
+            <p>Los Sistemas Alternativos y Aumentativos de Comunicación (SAAC) son formas de expresión distintas al lenguaje hablado que tienen como objetivo aumentar (aumentativos) y/o compensar (alternativos) las dificultades de comunicación y lenguaje de muchas personas.</p>
+            <a href="acerca.html" class="btn btn-info mt-3">Saber más sobre SAAC</a>
         </section>
 
-        <section class="py-4">
-          <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Publicidad</h2>
-          <div class="p-4">
-            <div class="flex items-stretch justify-between gap-4 rounded-xl">
-              <div class="flex flex-col gap-1 flex-[2_2_0px]">
-                <section id="que-es-saac" class="py-4 px-4">
-                    <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">¿Qué es SAAC?</h2>
-                    <p class="text-[#1c1c0d] text-base font-normal leading-relaxed mb-4">
-                        SAAC significa Sistemas Aumentativos y Alternativos de Comunicación. Son un conjunto de herramientas y estrategias diseñadas para ayudar a las personas que tienen dificultades para comunicarse de forma oral o escrita. Estos sistemas pueden aumentar la capacidad de hablar (sistemas aumentativos) o reemplazarla por completo (sistemas alternativos). Su propósito principal es permitir la expresión de ideas, necesidades y deseos, facilitando así una comunicación efectiva.
-                    </p>
-                </section>
-
-                <section id="beneficios" class="py-4 px-4 bg-[#f0f0e0]"> <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Beneficios de los SAAC</h2>
-                    <p class="text-[#1c1c0d] text-base font-normal leading-relaxed mb-4">
-                        Los Sistemas Aumentativos y Alternativos de Comunicación (SAAC) ofrecen beneficios fundamentales que transforman la vida de las personas con dificultades comunicativas. Principalmente, empoderan al individuo al permitirle expresar sus necesidades, pensamientos y deseos, lo que reduce la frustración y mejora su bienestar emocional.
-                    </p>
-                    <ul class="list-disc list-inside text-[#1c1c0d] text-base font-normal leading-relaxed pl-5">
-                        <li class="mb-2">Mejora la comunicación y la expresión.</li>
-                        <li class="mb-2">Reduce la frustración y la ansiedad.</li>
-                        <li class="mb-2">Fomenta la independencia.</li>
-                        <li class="mb-2">Apoya el desarrollo del lenguaje.</li>
-                        <li class="mb-2">Facilita la participación social y educativa.</li>
-                    </ul>
-                </section>
-
-                <section id="tipos-de-saac" class="py-4 px-4">
-                    <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Tipos de SAAC</h2>
-                    <p class="text-[#1c1c0d] text-base font-normal leading-relaxed mb-4">Clasificación de los diferentes tipos de SAAC:</p>
-                    
-                    <h3 class="text-[#1c1c0d] text-xl font-bold leading-tight tracking-[-0.015em] mt-6 mb-3">SAAC sin ayuda:</h3>
-                    <ul class="list-disc list-inside text-[#1c1c0d] text-base font-normal leading-relaxed pl-5 mb-4">
-                        <li class="mb-2">Gestos</li>
-                        <li class="mb-2">Señas (por ejemplo, Lengua de Señas Argentina - LSA)</li>
-                        <li class="mb-2">Comunicación corporal</li>
-                    </ul>
-                    
-                    <h3 class="text-[#1c1c0d] text-xl font-bold leading-tight tracking-[-0.015em] mt-6 mb-3">SAAC con ayuda:</h3>
-                    <ul class="list-disc list-inside text-[#1c1c0d] text-base font-normal leading-relaxed pl-5">
-                        <li class="mb-2">Tableros de comunicación con imágenes o símbolos</li>
-                        <li class="mb-2">Dispositivos electrónicos con salida de voz</li>
-                        <li class="mb-2">Aplicaciones de comunicación</li>
-                    </ul>
-                </section>
-
-                <section id="para-padres" class="py-4 px-4 bg-[#f0f0e0]">
-                    <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Información para Padres</h2>
-                    <p class="text-[#1c1c0d] text-base font-normal leading-relaxed mb-4">Orientación y recursos específicos para padres:</p>
-                    <ul class="list-disc list-inside text-[#1c1c0d] text-base font-normal leading-relaxed pl-5">
-                        <li class="mb-2">Cómo introducir un SAAC en el hogar.</li>
-                        <li class="mb-2">Estrategias para fomentar el uso del SAAC.</li>
-                        <li class="mb-2">La importancia del modelado y la paciencia.</li>
-                        <li class="mb-2">Recursos y organizaciones de apoyo para familias.</li>
-                    </ul>
-                </section>
-
-                <section id="para-docentes" class="py-4 px-4">
-                    <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Información para Docentes</h2>
-                    <p class="text-[#1c1c0d] text-base font-normal leading-relaxed mb-4">Necesidades de los educadores, abordaje de temas:</p>
-                    <ul class="list-disc list-inside text-[#1c1c0d] text-base font-normal leading-relaxed pl-5">
-                        <li class="mb-2">Cómo integrar los SAAC en el aula.</li>
-                        <li class="mb-2">Estrategias de enseñanza inclusivas.</li>
-                        <li class="mb-2">Colaboración con familias y profesionales.</li>
-                        <li class="mb-2">Adaptación de materiales y actividades.</li>
-                    </ul>
-                </section>
-
-                <section id="recursos" class="py-4 px-4 bg-[#f0f0e0]">
-                    <h2 class="text-[#1c1c0d] text-[22px] font-bold leading-tight tracking-[-0.015em] mb-4">Recursos Adicionales</h2>
-                    <p class="text-[#1c1c0d] text-base font-normal leading-relaxed mb-4">Incluir enlaces a:</p>
-                    <ul class="list-disc list-inside text-[#1c1c0d] text-base font-normal leading-relaxed pl-5">
-                        <li class="mb-2">Otras páginas web relevantes.</li>
-                        <li class="mb-2">Documentos y guías descargables.</li>
-                        <li class="mb-2">Videos explicativos.</li>
-                        <li class="mb-2">Comunidades en línea sobre SAAC.</li>
-                    </ul>
-                </section>        
-              </div>
+        <section class="row mb-5">
+            <div class="col-md-6">
+                <h3>Recursos Destacados</h3>
+                <ul class="list-group">
+                    <li class="list-group-item">Guías para padres y educadores</li>
+                    <li class="list-group-item">Ejercicios interactivos para niños</li>
+                    <li class="list-group-item">Investigaciones y artículos recientes</li>
+                </ul>
             </div>
-          </div>
+            <div class="col-md-6">
+                <h3>Eventos y Talleres</h3>
+                <p>Mantente al día con nuestros próximos eventos y talleres sobre SAAC.</p>
+                <button class="btn btn-success">Ver Calendario</button>
+                <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        Más Opciones
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Webinars</a></li>
+                        <li><a class="dropdown-item" href="#">Libros recomendados</a></li>
+                        <li><a class="dropdown-item" href="#">Historias de éxito</a></li>
+                    </ul>
+                </div>
+            </div>
         </section>
-      </main>
-
-      <footer>
-        <div class="h-5 bg-[#fcfcf8] py-4 text-center tituloMenu text-sm">
-          <p>&copy; 2025 SAAC Para Todos. Todos los derechos reservados.</p>
-          </div>
-      </footer>
     </div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const menuToggle = document.getElementById('menu-toggle');
-        const mainMenu = document.getElementById('main-menu');
-
-        if (menuToggle && mainMenu) {
-          menuToggle.addEventListener('click', function() {
-            mainMenu.classList.toggle('hidden'); // Alterna la clase 'hidden' para mostrar/ocultar
-            mainMenu.classList.toggle('flex');  // Asegura que se muestre como flex si está visible
-            mainMenu.classList.toggle('flex-col'); // Para que los items se apilen verticalmente en móvil
-          });
-        }
-      });
-    </script>
-  </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html>
